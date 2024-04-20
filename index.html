@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changeable Container Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-wrapper">
+    <button class="container-button active" data-container="search">Search Engine</button>
+    <button class="container-button" data-container="chat">AI-Assistant & AI-Chat</button>
+    <button class="container-button" data-container="marketplace">Marketplace</button>
+    <button class="container-button" data-container="jobs">Jobs</button>
+
+
+    <div class="search-options" style="display: none;">
+      <button class="search-option">SEARCH</button>
+      <button class="search-option">COPILOT</button>
+      <button class="search-option">SCHOOL</button>
+      <button class="search-option">IMAGES</button>
+      <button class="search-option">VIDEOS</button>
+      <button class="search-option">MAPS</button>
+      <button class="search-option">NEWS</button>
+      <button class="search-option">SHOPPING</button>
+      <button class="search-option">MORE</button>
+      <button class="search-option">FLIGHTS</button>
+      <button class="search-option">TRAVEL</button>
+      <button class="search-option">HOTELS</button>
+      <button class="search-option">REAL ESTATE</button>
+      <button class="search-option">MY BING</button>
+      <button class="search-option">TOOLS</button>
+    </div>
+  </div>
+  
+  
+  
+  <div class="container-content">
+    <div class="search-container" id="search-container">
+      <h2>Search Engine</h2>
+      <form id="search-form">
+        <input type="search" id="search-query" name="query" placeholder="Enter your search term">
+        <button class="search-option" data-category="All">All</button>
+        <button class="search-option" data-category="News">News</button>
+        <button class="search-option" data-category="Images">Images</button>
+        <button class="search-option" data-category="Videos">Videos</button>
+        <button class="search-option" data-category="Search">Search</button>
+        <button class="search-option" data-category="Copilot">Copilot</button>
+        <button class="search-option" data-category="School">School</button>
+        <button class="search-option" data-category="Images">Images</button>
+        <button class="search-option" data-category="Videos">Videos</button>
+        <button class="search-option" data-category="Maps">Maps</button>
+        <button class="search-option" data-category="News">News</button>
+        <button class="search-option" data-category="Shopping">Shopping</button>
+        <button class="search-option" data-category="Flights">Flights</button>
+        <button class="search-option" data-category="Travel">Travel</button>
+        <button class="search-option" data-category="Hotels">Hotels</button>
+        <button class="search-option" data-category="Real Estate">Real Estate</button>
+        <button class="search-option" data-category="More">More</button>
+        <button class="search-option" data-category="Tools">Tools</button>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  
+
+  
+
+
+  
+
+
+    <div class="chat-container" id="chat-container">
+      <h2>AI Chat</h2>
+      <div id="chat-window"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" name="message" placeholder="Ask your question">
+        <button type="submit">Send</button>
+
+      </form>
+    </div>
+    <div class="marketplace-container" id="marketplace-container">
+      <h2>Marketplace Search</h2>
+      <form id="marketplace-form">
+        <input type="search" id="marketplace-query" name="query" placeholder="Search for products">
+      
+        
+            <button class="marketplace-option" data-category="News">Jobs</button>
+            <button class="marketplace-option" data-category="Images">Items</button>
+            <button class="marketplace-option" data-category="Videos">Shop</button>
+            <button class="marketplace-option" data-category="Search">Events</button>
+            <button class="marketplace-option" data-category="Copilot">Cars</button>
+            <button class="marketplace-option" data-category="Copilot">Services</button>
+            <button class="marketplace-option" data-category="Copilot">Resturants</button>
+
+            <button type="submit">Search</button>
+             
+          
+          </form>
+            </div>
+          </div>
+
+
+          <div class="jobs-search-container" id="jobs-search-container">
+            <h2>Jobs Search</h2>
+            <form id="jobs-search-form">
+              <input type="search" id="jobs-search-query" name="query" placeholder="Search for jobs">
+            
+              
+                  <button class="jobs-search-option" data-category="Healthcare">Healthcare</button>
+                  <button class="jobs-search-option" data-category="Education">Education</button>
+                  <button class="jobs-search-option" data-category="Finance">Finance</button>
+                  <button class="jobs-search-option" data-category="Engineering">Engineering</button>
+                  <button class="jobs-search-option" data-category="Copilot">Transportation</button>
+                  <button class="jobs-search-option" data-category="Copilot">Retail</button>
+                  <button class="jobs-search-option" data-category="Copilot">Technology</button>
+      
+                  <button type="submit">Search</button>
+                   
+                  
+                </form>
+                  </div>
+                </div>
+          
+
+
+                
+
+<!---
+          <option value="all">All categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="books">Books</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+-->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
