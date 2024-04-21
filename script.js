@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const chatContainer = document.getElementById('chat-container');
   const marketplaceContainer = document.getElementById('marketplace-container');
   const jobsContainer = document.getElementById('jobs-search-container');
+  const upgradeContainer = document.getElementById('upgrade-plan-container');
 
   containerButtons.forEach(function(button) {
     button.addEventListener('click', function() {
