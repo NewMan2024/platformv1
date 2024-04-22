@@ -130,7 +130,7 @@ button[type="submit"] {
 }
 
 .container-content {
-  width: 80%; /* Adjust width as needed */
+  width: 98%; /* Adjust width as needed */
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -184,7 +184,7 @@ button[type="submit"] {
 
 /* Style for the chat input in the chat container */
 .chat-container input[type="text"] {
-  width: 100%; /* Set the width to 100% */
+  width: 98%; /* Set the width to 100% */
   padding: 15px; /* Increase padding for height */
   font-size: 16px; /* Adjust font size */
   border: 1px solid #ccc; /* Add border */
