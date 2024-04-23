@@ -106,7 +106,11 @@ button[type="submit"] {
 
 
 
-
+.container-line {
+  width: 100%; /* Set the width to 100% */
+  border: 1px solid #df3535; /* Set the border color to match the container buttons */
+  margin: 20px 0; /* Add margin to the top and bottom */
+}
 
 
 
@@ -240,3 +244,21 @@ button[type="submit"] {
   padding: 20px; /* Adjust padding as needed */
   border-radius: 5px; /* Add border radius for rounded corners */
 }
+
+
+
+.login-sign-up-container {
+  flex-direction: column;
+  align-items: end;
+  margin-top: 0px; /* Adjust margin as needed */
+}
+
+
+
+.main-bar-separator {
+  width: 100%;  /* Stretch the line across the full width */
+  height: 1px;   /* Set the line thickness */
+  background-color: #000000;  /* Set the line color (light gray in this case) */
+  margin: 10px 0;  /* Add some space above and below the line */
+}
+

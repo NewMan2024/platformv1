@@ -19,31 +19,41 @@ document.addEventListener('DOMContentLoaded', function() {
           searchContainer.style.display = 'block';
           chatContainer.style.display = 'none';
           marketplaceContainer.style.display = 'none';
-        jobsContainer.style.display = 'none';
+          jobsContainer.style.display = 'none';
+          focusInput('search-query');
           break;
         case 'chat':
           searchContainer.style.display = 'none';
           chatContainer.style.display = 'block';
           marketplaceContainer.style.display = 'none';
           jobsContainer.style.display = 'none';
+          focusInput('chat-input');
           break;
         case 'marketplace':
           searchContainer.style.display = 'none';
           chatContainer.style.display = 'none';
           marketplaceContainer.style.display = 'block';
           jobsContainer.style.display = 'none';
+          focusInput('marketplace-query');
           break;
         case 'jobs':
-            searchContainer.style.display = 'none';
-            chatContainer.style.display = 'none';
-            marketplaceContainer.style.display = 'none';
-            jobsContainer.style.display = 'block';
-            break;
-
-
+          searchContainer.style.display = 'none';
+          chatContainer.style.display = 'none';
+          marketplaceContainer.style.display = 'none';
+          jobsContainer.style.display = 'block';
+          focusInput('jobs-search-query');
+          break;
         default:
           break;
       }
     });
   });
+
+  // Function to focus the input field based on the container type
+  function focusInput(inputId) {
+    const input = document.getElementById(inputId);
+    if (input) {
+      input.focus();
+    }
+  }
 });
