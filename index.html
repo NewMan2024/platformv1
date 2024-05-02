@@ -16,12 +16,15 @@
 
 
     <div class="login-sign-up-container" id="login-sign-up-container">
-      <h2> </h2>
-      <form id="login-sign-up-form">
+      
+      <for id="login-sign-up-form">
         
             <button type="submit">Login </button>
             <button type="submit">Sign Up</button>
+           <br>
             <button type="submit">Upgrade Plan</button>
+            <button type="submit">Promote</button>
+
       </form>
             </div>
 
@@ -54,9 +57,10 @@
       <h2>Search Engine</h2>
       <form id="search-form">
         <input type="search" id="search-query" name="query" placeholder="Enter your search term">
-        <h2> </h2>
+        
 
-  
+        <button type="submit">Search</button>
+
         <button class="search-option" data-category="All">All</button>
         <button class="search-option" data-category="News">News</button>
         <button class="search-option" data-category="Images">Images</button>
@@ -75,7 +79,9 @@
         <button class="search-option" data-category="Real Estate">Real Estate</button>
         <button class="search-option" data-category="More">More</button>
         <button class="search-option" data-category="Tools">Tools</button>
-        <button type="submit">Search</button>
+        <button class="search-option" data-category="View All"> View All </button>
+
+
       </form>
     </div>
   </div>
@@ -96,7 +102,8 @@
       <h2>Marketplace Search</h2>
       <form id="marketplace-form">
         <input type="search" id="marketplace-query" name="query" placeholder="Search for products">
-      
+        <button type="submit">Search</button>
+
         
             <button class="marketplace-option" data-category="News">Jobs</button>
             <button class="marketplace-option" data-category="Images">Items</button>
@@ -105,8 +112,8 @@
             <button class="marketplace-option" data-category="Copilot">Cars</button>
             <button class="marketplace-option" data-category="Copilot">Services</button>
             <button class="marketplace-option" data-category="Copilot">Resturants</button>
+            <button class="marketplace-option" data-category="Copilot"> View All </button>
 
-            <button type="submit">Search</button>
              
           
           </form>
@@ -119,16 +126,16 @@
             <form id="jobs-search-form">
               <input type="search" id="jobs-search-query" name="query" placeholder="Search for jobs">
             
-              
+              <button type="submit">Search</button>
                   <button class="jobs-search-option" data-category="Healthcare">Healthcare</button>
                   <button class="jobs-search-option" data-category="Education">Education</button>
                   <button class="jobs-search-option" data-category="Finance">Finance</button>
                   <button class="jobs-search-option" data-category="Engineering">Engineering</button>
-                  <button class="jobs-search-option" data-category="Copilot">Transportation</button>
-                  <button class="jobs-search-option" data-category="Copilot">Retail</button>
-                  <button class="jobs-search-option" data-category="Copilot">Technology</button>
-      
-                  <button type="submit">Search</button>
+                  <button class="jobs-search-option" data-category="Transportation">Transportation</button>
+                  <button class="jobs-search-option" data-category="Retail">Retail</button>
+                  <button class="jobs-search-option" data-category="Technology">Technology</button>
+                  <button class="jobs-search-option" data-category="Copilot">View All</button>
+
                    
                   
                 </form>
@@ -152,8 +159,20 @@
       </form>
     </div>
   </div>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<button onclick="toggleDrawer()">
+  <i class="fas fa-bars"></i> Toggle Drawer
+</button>
 -->
   
+
+
+
+
 
   <script src="script.js"></script>
 </body>

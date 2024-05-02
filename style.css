@@ -9,7 +9,8 @@ body {
   display: flex;
   justify-content: space-around; /* Distribute buttons evenly */
   width: 80%; /* Adjust width as needed */
-  margin: 0 auto 20px; /* Set margin for top and bottom */
+  margin: 0 auto 0px; /* Set margin for top and bottom */
+
 }
 
 .container-button {
@@ -17,6 +18,12 @@ body {
   font-weight: bold; /* Adjust font size */
   padding: 10px 20px;
   border: 1px solid #ddd;
+ /* Add specific width */
+ width: 150px; /* Adjust width as needed */
+ /* Optionally, you can also add a fixed height to ensure consistent button sizes */
+ height: 80px; /* Adjust height as needed */
+ margin: 0 auto 00px; /* Set margin for top and bottom */
+
 
 }
 
@@ -261,4 +268,56 @@ button[type="submit"] {
   background-color: #000000;  /* Set the line color (light gray in this case) */
   margin: 10px 0;  /* Add some space above and below the line */
 }
+
+
+
+/* Media query for screens with width 600px or less */
+@media screen and (max-width:1000px) {
+  .container-button {
+    padding: 4px 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+    margin: 10px; /* Add space around the button */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-button {
+    display: flex; /* Hide the buttons initially */
+  }
+  .drawer {
+    height: 100%; /* Full-screen */
+    width: 0; /* Start off-screen */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect */
+    padding-top: 60px; /* Place content 60px from the top */
+  }
+  .drawer .container-button {
+    display: block; /* Show the buttons in the drawer */
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+    
+  }
+
+  .drawer .container-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 

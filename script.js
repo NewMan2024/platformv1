@@ -57,3 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+
+// Function to toggle the drawer
+function toggleDrawer() {
+  const drawer = document.querySelector('.drawer');
+  if (drawer.style.width === '0px' || !drawer.style.width) {
+    drawer.style.width = '250px'; // Open the drawer
+  } else {
+    drawer.style.width = '0px'; // Close the drawer
+  }
+}
+
+// Attach the function to your button
+const button = document.querySelector('.container-button');
+button.addEventListener('click', toggleDrawer);
